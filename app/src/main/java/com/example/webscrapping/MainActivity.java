@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity
         volumeList = new ArrayList<>();
         faceValueList = new ArrayList<>();
         marketCapList = new ArrayList<>();
-        /*subElements = elements.select("tr");
+        subElements = elements.select("tr");
         Elements innerElements;
         for (int i=0; i<subElements.size(); i++)
         {
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
             }
         }
 
-        Log.e("listIs",currentPriceList+"");*/
+        Log.e("listIs",currentPriceList+"");
 
     }
 }
