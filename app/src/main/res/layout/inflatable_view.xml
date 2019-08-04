@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:gravity="center"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/currentPrice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="Current Price in \u20b9"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/percentChange"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:text="% Change"
+        android:gravity="center"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/volume"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="Volume"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/equity"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="Equity"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/faceValue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="Face Value"
+        android:textColor="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/marketCap"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:padding="3dp"
+        android:gravity="center"
+        android:text="Market Cap ( \u20b9 Cr.)"
+        android:textColor="@color/indigo"/>
+
+</LinearLayout>

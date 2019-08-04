@@ -1,21 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
-</ScrollView>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BSE "
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="( Bombay Stock Exchange )"
+            android:textColor="@color/red"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Company Name"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Current Price in \u20b9"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="% Change"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Volume"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Equity"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Face Value"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Market Cap ( \u20b9 Cr.)"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
